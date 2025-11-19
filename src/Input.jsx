@@ -26,7 +26,7 @@ const Input = ({ setTodos, todos, editTodo, setEditTodo}) => {
                     setTodos([...todos, { key: Date.now(), text: todo }])
                 }
                 setTodo('')
-            }}>Add</button>
+            }}>{`${editTodo ? "update" : "Add"}`}</button>
 
             <button className="button reset" onClick={() => {
                 setTodos([])
